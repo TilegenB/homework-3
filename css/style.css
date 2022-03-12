@@ -39,6 +39,7 @@ body {
     text-transform: capitalize;
     color:var(--secondary-color);
     text-decoration: none;
+    background: transparent;
 }
 .button--white {
     border: 2px solid #fff;
@@ -260,6 +261,7 @@ body {
 .social__item:not(:last-child) {
     margin-right: 30px;
 }
+
 @media screen and (max-width:1509px) {
     .download {
         order: 1;
@@ -276,6 +278,33 @@ body {
 .tabs {
     margin-bottom: 100px;
 }
+.tabs__item {
+    display: flex;
+    flex-flow: row wrap;
+}
+.tabs-button {
+    background: transparent;
+    grid-area: tabs-button;
+}
+.tabs-title {
+    grid-area: tabs-title;
+}
+.tabs-text {
+    grid-area: tabs-text;
+}
+.tabs-download-button {
+    grid-area: tabs-download-button;
+}
+.tabs-content {
+    width: 570px;
+    display: grid;
+    grid-template-areas: 
+        "tabs-button tabs-button tabs-button"
+        "tabs-title tabs-title tabs-title"
+        "tabs-text tabs-text tabs-text"
+        "tabs-download-button tabs-download-button tabs-download-button";
+}
+
 .about-list {
     display: flex;
     flex-flow: row wrap;
