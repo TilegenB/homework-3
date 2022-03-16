@@ -1,0 +1,68 @@
+* { 
+
+}
+div {}
+#id {}
+.class {}
+[name="value"] {} /*селектор атрибута*/
+:visited {}
+
+a:link  /**/
+a:hover /**/
+a:active /**/
+a:visited  /**/
+
+.c1.c2  {}
+div p {} 
+div > p {}
+
+
+div p,
+header p,
+footer p {color: red;} 
+
+div ~ p /* ? */
+div + p  /* ? */
+
+
+:first-child
+:last-child
+:only-child /* ? */
+:nth-child(a)
+:nth-child(an+b)
+:nth-child(even)
+:nth-child(odd)
+:first-of-type /* ? */
+:last-of-type /* ? */
+:only-of-type /* ? */
+:nth-of-type /* ? */
+:nth-last-of-type /* ? */
+:empty
+:hover
+:not(селектор)
+
+div:empty {bgc: blue}
+<div></div>
+//Задача
+
+<div>
+    <div>
+    <p>
+    <ul>
+
+
+div > div 
+div > *
+div > *:first-child
+.section__item:is(.off) {bgc:color;}
+.section__item:nth-child(2n+1):is(.off) /* ? */
+
+img {width: 100%}
+table .title img {width: 50%}
+
+<table class="title">
+    <tr>
+        <td><img src="pic.jpg" alt=""></td>
+    </tr>
+</table>
+
