@@ -1,0 +1,94 @@
+@import url(../../css/style.css);
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+.weather-title, 
+.weather-tempature {
+    margin-bottom: 15px;
+}
+.weather__item .weather-text,
+.weather__item .weather-img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.weather {
+    padding: 140px 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1210px;
+}
+.weather-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.weather__item {
+    width: 370px;
+    min-height: 667px;
+    padding-top: 25px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+.weather__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.weather__item--morning {
+    background: linear-gradient(18.04deg, #F1B14B -0.75%, #BC2C35 100%);
+}
+.weather__item--day {
+    background: linear-gradient(18.04deg, #4BB5F1 -0.75%, #2F2CBC 100%);
+}
+.weather__item--night {
+    background: linear-gradient(18.04deg, #223076 -0.75%, #06050E 100%);
+}
+.weather-title {
+    font-size: 36px;
+}
+.weather-img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+.weather-img--sun {
+    background: url(../img/sun@2.svg) center no-repeat;
+}
+.weather-img--moon {
+    background: url(../img/crescent-moon@2.svg) center no-repeat;
+}
+.weather-tempature {
+    font-size: 72px;
+}
+.weather-table {
+    padding:0 20px;
+    width: 335px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.weather-table td {
+    border-top: 1px solid #949494;
+    padding: 10px 0;
+}
+.weather-table-img {
+    width: 30px;
+    height: 30px;
+}
+.weather-table-img--cloud {
+    background: url(../img/cloud.svg) center no-repeat;
+}
+.weather-table-img--rain {
+    background: url(../img/rain.svg) center no-repeat;
+}
+.weather-table-img--sun {
+    background: url(../img/sun.svg) center no-repeat;
+}
+.weather-table-img--snow {
+    background: url(../img/snowflake.svg) center no-repeat;
+}
