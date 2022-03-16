@@ -82,18 +82,15 @@ body {
     color: var(--secondary-color);
 }
 .wrapper {
-    width: 1170px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
 .wrapper--flex {
     display: flex;
     flex-flow: row wrap;
-    box-sizing: content-box;
 }
-.wrapper-100 {
-    width: 100%;
-}
+
 .section-title {
     font-size: 36px;
     font-weight: 400;
@@ -116,34 +113,39 @@ body {
     text-align: center;
     margin-bottom: 70px;
 }
+.header {
+    background-color: var(--black-bacground-color);
+}
+.header-nav {
+    display: flex;
+}
 .nav-list {
-    width: 100%;
     min-height: 75px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    background-color: var(--black-bacground-color);
-    padding: 0 110px;
 }
 .nav__item {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
     text-transform: capitalize;
     min-height: 75px;
 }
-.nav__item:not(:first-child):hover,
-.nav__item:not(:first-child):focus {
+.nav__item:hover,
+.nav__item:focus {
     background: var(--pink-color);
     transition: all .2s ease;
 } 
 .nav__item--active {
     background-color: var(--active-background);
 }
-.nav__item:first-child {
+.nav__logo {
     margin-right: auto;
 }
 .nav__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 75px;
     padding: 0 25px;
 }  
 .download-form {
@@ -207,21 +209,15 @@ body {
     z-index: 20;
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-between;
     width: 470px;
     height: 450px;
     background-color: #fff;
     border-radius: 10px;
 }
-.form fieldset {
-    padding: 30px 50px;
-}
-.form fieldset {
-    border:none;
-    flex-grow:1;
-}
 .form-title {
     font-size: 24px;
-    padding-top: 30px;
+    padding: 30px 50px 0;
     text-align: center;
     text-transform: uppercase;
     color: var(--bgray-color);
@@ -229,6 +225,10 @@ body {
 }
 .form-title b {
     color: var(--pink-color);
+}
+.form-input-wrapper {
+    padding: 0 50px;
+    flex-grow: 1;
 }
 .form-input {
     color: var(--input-color);
@@ -242,7 +242,7 @@ body {
 .form-button {
     width: 100%;
     background-color: var(--pink-color);
-    flex-grow: 10;
+    flex-grow: 1;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -424,8 +424,10 @@ body {
     -moz-box-shadow: 0px 4px 10px 0px rgba(51, 51, 51, 0.2);
     box-shadow: 0px 4px 10px 0px rgba(51, 51, 51, 0.2);
     transition: all ease-in .2s;
-    margin-bottom: 30px;
-    transition: margin-bottom .2s;
+    position: relative;
+    top: 30px;
+    transition: all .2s;
+    background-color: transparent;
 }
 .table-black {
     background: var(--bgray-color);
@@ -445,9 +447,6 @@ body {
 } 
 .reviews {
     padding-top: 110px;
-}
-.reviews-wrapper {
-    box-sizing: content-box;
 }
 .reviews-list {
     display: flex;
@@ -611,9 +610,7 @@ body {
     .download {
         order: 1;
     }
-    .form {
-        display: none;
-    }
+
 }
 @media screen and (max-width:970px) {
     .nav-list {
