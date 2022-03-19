@@ -54,7 +54,7 @@ body {
     text-transform: capitalize;
     color:var(--secondary-color);
     text-decoration: none;
-    background: transparent;
+    background: transparent;git
 }
 .button--white {
     border: 2px solid #fff;
@@ -127,7 +127,7 @@ body {
 }
 .nav__item {
     text-transform: capitalize;
-    min-height: 75px;
+    min-height: 81px;
 }
 .nav__item:hover,
 .nav__item:focus {
@@ -330,6 +330,7 @@ body {
     border-bottom: none;
 }
 .tabs-title {
+    text-shadow: 1px 1px 2px var(--pink-color);
     grid-area: tabs-title;
     display: flex;
     flex-wrap: wrap;
@@ -346,6 +347,9 @@ body {
     grid-area: tabs-download-button;
     background-color: var(--pink-color);
     width: 270px;
+}
+.tabs-img {
+    box-shadow: 10px 5px 5px var(--contact-border);
 }
 .tabs-content {
     /* padding: 0 30px 0 100px; */
@@ -370,9 +374,6 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-}
-.about__item:not(:nth-child(3n)) {
-
 }
 .about-img-wrapper {
     width: 92px;
@@ -425,7 +426,7 @@ body {
     box-shadow: 0px 4px 10px 0px rgba(51, 51, 51, 0.2);
     transition: all ease-in .2s;
     position: relative;
-    top: 30px;
+    top: -30px;
     transition: all .2s;
     background-color: transparent;
 }

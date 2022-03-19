@@ -11,18 +11,28 @@ body {
     height: 600px;
     border: 1px solid;
 }
-/* .item {
+.item {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+.display-inline-block div{
     display: inline-block;
     vertical-align: top;
     background-color: mediumseagreen;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-} */
-.item {
+}
+.flex {
+    display: flex;
+    background-color: tomato;
+}
+.float-left {
     float: left;
-    background-color: mediumseagreen;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
+    background-color: steelblue;
+}
+.float-right {
+    float: right;
+    background-color: steelblue;
+}
+.float{
+    background-color: steelblue;
 }

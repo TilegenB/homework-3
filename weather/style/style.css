@@ -72,9 +72,20 @@ body {
     margin: 0 auto;
     border-collapse: collapse;
 }
+.weather-table tr:last-child {
+    border-bottom: 1px solid #949494;
+}
 .weather-table td {
     border-top: 1px solid #949494;
     padding: 10px 0;
+}
+.weather-table td:first-child {
+    text-align: left;
+    width: 115px;
+}
+.weather-table td:last-child, 
+.weather-table td:nth-last-child(-n+2) {
+    width: 40px;
 }
 .weather-table-img {
     width: 30px;
